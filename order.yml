@@ -1,13 +1,12 @@
+env: dev
 spring:
   application:
     name: order
-  cloud:
-    config:
-      discovery:
-        enabled: true
-        service-id: CONFIG
-      profile: test
-eureka:
-  client:
-    service-url:
-      defaultZone: http://peer1:8761/eureka/
+  jpa:
+    database: oracle
+    show-sql: true
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@192.168.0.230:1521:KWW
+    username: testdatabase
+    password: sa
