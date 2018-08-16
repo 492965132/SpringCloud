@@ -9,3 +9,10 @@ spring:
     url: jdbc:oracle:thin:@192.168.0.230:1521:KWW
     username: testdatabase
     password: sa
+    
+# 访问：      /{lable}/{name}-{profiles}.yml
+# name 服务名
+# profiles 环境名
+# lable 在git上对应的是分支，默认是master分支，可以不写
+
+# 访问如：    ip+端口/order-a.yml     ip+端口/order-b.yml          "-"后面可以随意写，但是如果写了dev或test，会优先找另外两个更加匹配的yml文件
