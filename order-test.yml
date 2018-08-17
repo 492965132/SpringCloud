@@ -10,4 +10,7 @@ spring:
     url: jdbc:oracle:thin:@192.168.0.230:1521:KWW
     username: testdatabase
     password: sa
+girl:
+  name: lili
+  age: 18
 # 访问如：    ip+端口/order-test.yml
