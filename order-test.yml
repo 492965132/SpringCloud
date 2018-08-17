@@ -10,6 +10,11 @@ spring:
     url: jdbc:oracle:thin:@192.168.0.230:1521:KWW
     username: testdatabase
     password: sa
+  rabbitmq:
+    host: 192.168.9.72
+    port: 5672
+    username: guest
+    password: guest
 girl:
   name: lili
   age: 18
